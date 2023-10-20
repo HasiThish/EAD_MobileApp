@@ -94,19 +94,6 @@
                 app:layout_constraintTop_toBottomOf="@id/startEditText"
                 android:layout_marginTop="16dp" />
 
-            <!-- Station EditText -->
-            <EditText
-                android:id="@+id/stationEditText"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:hint="Station"
-                android:textColorHint="#1382a9"
-                android:backgroundTint="#1382a9"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/endEditText"
-                android:layout_marginTop="16dp" />
-
             <!-- Search Button -->
             <Button
                 android:id="@+id/searchButton"
@@ -119,7 +106,7 @@
                 android:stateListAnimator="@null"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/stationEditText"
+                app:layout_constraintTop_toBottomOf="@id/endEditText"
                 android:layout_marginTop="16dp" />
 
             <!-- Display Data -->
