@@ -43,7 +43,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <EditText
-                android:id="@+id/nicEditText"
+                android:id="@+id/nameEditText"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="40dp"
@@ -71,7 +71,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/mobileEditText" />
 
             <EditText
-                android:id="@+id/passwordEditText"
+                android:id="@+id/usernameEditText"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
@@ -82,7 +82,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/nicEditText" />
+                app:layout_constraintTop_toBottomOf="@id/nameEditText" />
 
             <EditText
                 android:id="@+id/passwordEditText2"
@@ -96,10 +96,10 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/passwordEditText" />
+                app:layout_constraintTop_toBottomOf="@+id/usernameEditText" />
 
             <EditText
-                android:id="@+id/nameEditText"
+                android:id="@+id/nicEditText"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="27dp"
@@ -124,7 +124,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/nameEditText" />
+                app:layout_constraintTop_toBottomOf="@+id/nicEditText" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

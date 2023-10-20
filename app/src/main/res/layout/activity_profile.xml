@@ -48,7 +48,7 @@
 
     <!-- NIC, Password, Name -->
     <TextView
-        android:id="@+id/nicTextView"
+        android:id="@+id/nameTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="#1382a9"
@@ -57,21 +57,39 @@
         android:layout_marginTop="8dp" />
 
     <TextView
+        android:id="@+id/usernameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#1382a9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameTextView"
+        android:layout_marginTop="8dp" />
+
+    <TextView
         android:id="@+id/passwordTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="#1382a9"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nicTextView"
+        app:layout_constraintTop_toBottomOf="@+id/usernameTextView"
         android:layout_marginTop="8dp" />
 
     <TextView
-        android:id="@+id/nameTextView"
+        android:id="@+id/nicTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="#1382a9"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/passwordTextView"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/mobileTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#1382a9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nicTextView"
         android:layout_marginTop="8dp" />
 
     <!-- Edit Button -->
@@ -85,7 +103,7 @@
         android:layout_marginEnd="36dp"
         android:text="Edit"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/nicTextView" />
+        app:layout_constraintTop_toTopOf="@+id/mobileTextView" />
 
     <Button
         android:id="@+id/deactivateButton"
