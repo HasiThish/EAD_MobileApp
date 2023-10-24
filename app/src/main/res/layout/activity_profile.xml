@@ -66,21 +66,12 @@
         android:layout_marginTop="8dp" />
 
     <TextView
-        android:id="@+id/passwordTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="#1382a9"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/usernameTextView"
-        android:layout_marginTop="8dp" />
-
-    <TextView
         android:id="@+id/nicTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="#1382a9"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/passwordTextView"
+        app:layout_constraintTop_toBottomOf="@+id/usernameTextView"
         android:layout_marginTop="8dp" />
 
     <TextView

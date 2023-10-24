@@ -76,7 +76,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:hint="From"
+                android:hint="Train Number"
                 android:textColor="#1382a9"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -88,35 +88,46 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:hint="To"
+                android:hint="NIC"
                 android:textColor="#1382a9"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/fromEditText" />
 
             <!-- Date Selection -->
-            <EditText
-                android:id="@+id/dateEditText"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:hint="Date"
-                android:textColor="#1382a9"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/toEditText" />
+        <EditText
+            android:id="@+id/dateEditText"
+            android:layout_width="185dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Date and Time"
+            android:textColor="#1382a9"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toEditText" />
 
-            <!-- Time Selection -->
-            <EditText
-                android:id="@+id/timeEditText"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:hint="Time"
-                android:textColor="#1382a9"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/dateEditText" />
+
+        <Button
+            android:id="@+id/date_time_picker_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="12dp"
+            android:text="Select Date/Time"
+            app:layout_constraintStart_toEndOf="@+id/dateEditText"
+            app:layout_constraintTop_toBottomOf="@+id/toEditText" />
+
+        <EditText
+            android:id="@+id/toAddSeats"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="No: of Seats"
+            android:textColor="#1382a9"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/date_time_picker_button" />
 
             <!-- Check Button and Checkbox -->
 
@@ -134,7 +145,7 @@
                 app:layout_constraintEnd_toStartOf="@+id/reserveButton"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/timeEditText" />
+                app:layout_constraintTop_toBottomOf="@+id/toAddSeats" />
 
             <CheckBox
                 android:id="@+id/checkBox"
@@ -143,7 +154,7 @@
                 android:layout_marginStart="40dp"
                 android:layout_marginTop="92dp"
                 app:layout_constraintStart_toEndOf="@+id/checkButton"
-                app:layout_constraintTop_toBottomOf="@+id/timeEditText" />
+                app:layout_constraintTop_toBottomOf="@+id/toAddSeats" />
 
             <Button
                 android:id="@+id/reserveButton"
@@ -155,7 +166,7 @@
                 android:text="Reserve"
                 android:textColor="#FFFFFF"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/timeEditText" />
+                app:layout_constraintTop_toBottomOf="@+id/toAddSeats" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </FrameLayout>

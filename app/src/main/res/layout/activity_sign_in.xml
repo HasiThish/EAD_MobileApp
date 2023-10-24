@@ -26,7 +26,7 @@
 
         <!-- Sign In Topic -->
 
-        <!-- NIC Input Field -->
+        <!-- Username Input Field -->
 
         <TextView
             android:id="@+id/signInTopic"
@@ -48,7 +48,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
             android:backgroundTint="#1382a9"
-            android:hint="NIC"
+            android:hint="Username"
             android:textColorHint="#1382a9"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
@@ -93,6 +93,7 @@
             android:hint="Password"
             android:textColorHint="#1382a9"
             android:textStyle="bold"
+            android:inputType="textPassword"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
